@@ -1,0 +1,43 @@
+{
+  "manifest": {
+    "name": "promise",
+    "version": "2.0.0",
+    "description": "Bare bones Promises/A+ implementation",
+    "main": "index.js",
+    "scripts": {
+      "test": "mocha -R spec --timeout 200 --slow 99999"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/then/promise.git"
+    },
+    "author": {
+      "name": "ForbesLindesay"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "is-promise": "~1"
+    },
+    "devDependencies": {
+      "promises-aplus-tests": "*",
+      "mocha-as-promised": "~1.2.1",
+      "better-assert": "~1.0.0"
+    },
+    "_registry": "npm",
+    "_loc": "/data/data/com.termux/files/home/.cache/yarn/v2/npm-promise-2.0.0-46648aa9d605af5d2e70c3024bf59436da02b80e/package.json",
+    "readmeFilename": "Readme.md",
+    "readme": "[![Build Status](https://travis-ci.org/then/promise.png)](https://travis-ci.org/then/promise)\n<a href=\"http://promises-aplus.github.com/promises-spec\"><img src=\"http://promises-aplus.github.com/promises-spec/assets/logo-small.png\" align=\"right\" /></a>\n# promise\n\n  This a bare bones [Promises/A+](http://promises-aplus.github.com/promises-spec/) implementation.\n\n  It is designed to get the basics spot on correct, so that you can build extended promise implementations on top of it.\n\n## Installation\n\n  Server:\n\n    $ npm install promise\n\n  Client:\n\n    $ component install then/promise\n\n## API\n\n  In the example below shows how you can load the promise library (in a way that works on both client and server).  It then demonstrates creating a promise from scratch.  You simply call `new Promise(fn)`.  There is a complete specification for what is returned by this method in [Promises/A+](http://promises-aplus.github.com/promises-spec/).\n\n```javascript\nvar Promise = require('promise');\n\nvar promise = new Promise(function (resolve, reject) {\n    get('http://www.google.com', function (err, res) {\n      if (err) reject(err);\n      else resolve(res);\n    });\n  });\n```\n\n## Extending Promises\n\n  There are three options for extending the promises created by this library.\n\n### Inheritance\n\n  You can use inheritance if you want to create your own complete promise library with this as your basic starting point, perfect if you have lots of cool features you want to add.  Here is an example of a promise library called `Awesome`, which is built on top of `Promise` correctly.\n\n```javascript\nvar Promise = require('promise');\nfunction Awesome(fn) {\n  if (!(this instanceof Awesome)) return new Awesome(fn);\n  Promise.call(this, fn);\n}\nAwesome.prototype = Object.create(Promise.prototype);\nAwesome.prototype.constructor = Awesome;\n\n//Awesome extension\nAwesome.prototype.spread = function (cb) {\n  return this.then(function (arr) {\n    return cb.apply(this, arr);\n  })\n};\n```\n\n  N.B. if you fail to set the prototype and constructor properly or fail to do Promise.call, things can fail in really subtle ways.\n\n### Wrap\n\n  This is the nuclear option, for when you want to start from scratch.  It ensures you won't be impacted by anyone who is extending the prototype (see below).\n\n```javascript\nfunction Uber(fn) {\n  if (!(this instanceof Uber)) return new Uber(fn);\n  var _prom = new Promise(fn);\n  this.then = _prom.then;\n}\n\nUber.prototype.spread = function (cb) {\n  return this.then(function (arr) {\n    return cb.apply(this, arr);\n  })\n};\n```\n\n### Extending the Prototype\n\n  In general, you should never extend the prototype of this promise implimenation because your extensions could easily conflict with someone elses extensions.  However, this organisation will host a library of extensions which do not conflict with each other, so you can safely enable any of those.  If you think of an extension that we don't provide and you want to write it, submit an issue on this repository and (if I agree) I'll set you up with a repository and give you permission to commit to it.\n\n## License\n\n  MIT\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/promise/-/promise-2.0.0.tgz#46648aa9d605af5d2e70c3024bf59436da02b80e",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/promise/-/promise-2.0.0.tgz",
+    "hash": "46648aa9d605af5d2e70c3024bf59436da02b80e",
+    "integrity": "sha1-RmSKqdYFr10ucMMCS/WUNtoCuA4=",
+    "registry": "npm",
+    "packageName": "promise"
+  },
+  "registry": "npm",
+  "hash": "46648aa9d605af5d2e70c3024bf59436da02b80e"
+}

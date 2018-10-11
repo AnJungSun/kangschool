@@ -1,0 +1,49 @@
+{
+  "manifest": {
+    "name": "schedule",
+    "version": "0.5.0",
+    "description": "Cooperative scheduler for the browser environment.",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/facebook/react.git"
+    },
+    "license": "MIT",
+    "keywords": [
+      "react"
+    ],
+    "bugs": {
+      "url": "https://github.com/facebook/react/issues"
+    },
+    "homepage": "https://reactjs.org/",
+    "dependencies": {
+      "object-assign": "^4.1.1"
+    },
+    "files": [
+      "LICENSE",
+      "README.md",
+      "index.js",
+      "tracing.js",
+      "tracing-profiling.js",
+      "cjs/",
+      "umd/"
+    ],
+    "_registry": "npm",
+    "_loc": "/data/data/com.termux/files/home/.cache/yarn/v2/npm-schedule-0.5.0-c128fffa0b402488b08b55ae74bb9df55cc29cc8/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# `schedule`\n\nThis is a package for cooperative scheduling in a browser environment. It is currently used internally by React, but we plan to make it more generic.\n\nThe public API for this package is not yet finalized.\n\n### Thanks\n\nThe React team thanks [Haoliang Gao](https://github.com/popomore) for donating the `schedule` package name.\n",
+    "licenseText": "MIT License\n\nCopyright (c) Facebook, Inc. and its affiliates.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/schedule/-/schedule-0.5.0.tgz#c128fffa0b402488b08b55ae74bb9df55cc29cc8",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/schedule/-/schedule-0.5.0.tgz",
+    "hash": "c128fffa0b402488b08b55ae74bb9df55cc29cc8",
+    "integrity": "sha512-HUcJicG5Ou8xfR//c2rPT0lPIRR09vVvN81T9fqfVgBmhERUbDEQoYKjpBxbueJnCPpSu2ujXzOnRQt6x9o/jw==",
+    "registry": "npm",
+    "packageName": "schedule"
+  },
+  "registry": "npm",
+  "hash": "c128fffa0b402488b08b55ae74bb9df55cc29cc8"
+}

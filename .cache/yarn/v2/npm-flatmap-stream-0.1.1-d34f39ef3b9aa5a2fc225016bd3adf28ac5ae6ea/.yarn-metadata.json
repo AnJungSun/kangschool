@@ -1,0 +1,43 @@
+{
+  "manifest": {
+    "name": "flatmap-stream",
+    "version": "0.1.1",
+    "description": "",
+    "main": "index.min.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/hugeglass/flatmap-stream.git"
+    },
+    "author": {
+      "name": "Antonio Macias"
+    },
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/hugeglass/flatmap-stream/issues"
+    },
+    "homepage": "https://github.com/hugeglass/flatmap-stream#readme",
+    "devDependencies": {
+      "event-stream": "3.3.4"
+    },
+    "_registry": "npm",
+    "_loc": "/data/data/com.termux/files/home/.cache/yarn/v2/npm-flatmap-stream-0.1.1-d34f39ef3b9aa5a2fc225016bd3adf28ac5ae6ea/package.json",
+    "readmeFilename": "README.md",
+    "readme": "UNMAINTAINED",
+    "licenseText": "MIT License\n\nCopyright (c) 2018 Antonio Macias\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/flatmap-stream/-/flatmap-stream-0.1.1.tgz#d34f39ef3b9aa5a2fc225016bd3adf28ac5ae6ea",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/flatmap-stream/-/flatmap-stream-0.1.1.tgz",
+    "hash": "d34f39ef3b9aa5a2fc225016bd3adf28ac5ae6ea",
+    "integrity": "sha512-lAq4tLbm3sidmdCN8G3ExaxH7cUCtP5mgDvrYowsx84dcYkJJ4I28N7gkxA6+YlSXzaGLJYIDEi9WGfXzMiXdw==",
+    "registry": "npm",
+    "packageName": "flatmap-stream"
+  },
+  "registry": "npm",
+  "hash": "d34f39ef3b9aa5a2fc225016bd3adf28ac5ae6ea"
+}
